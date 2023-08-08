@@ -1,0 +1,13 @@
+.icon-leftarrow {
+    @apply fill-white;
+    @apply w-12;
+    @apply h-12;
+    @apply z-30;
+}
+
+.icon-rightarrow {
+    @apply fill-white;
+    @apply w-12;
+    @apply h-12;
+    @apply z-30;
+}

@@ -1,0 +1,39 @@
+.slideshow {
+    @apply relative;
+
+    @apply w-full;
+    @apply flex;
+    @apply items-center;
+    @apply justify-center;
+}
+
+.slideshow-left {
+
+}
+
+.slideshow-right {
+
+}
+
+.slideshow-content {
+    @apply relative;
+    @apply w-full;
+    @apply h-96;
+    @apply flex;
+    @apply items-center;
+    @apply overflow-clip;
+}
+
+.slideshow-items {
+    @apply flex;
+    @apply absolute;
+    @apply left-0;
+    @apply top-0;
+    @apply z-0;
+    @apply gap-4;
+    @apply overflow-clip;
+}
+
+.slideshow-item {
+
+}
