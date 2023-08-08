@@ -1,7 +1,7 @@
 import React, { ReactNode, useRef } from "react"
 
-import LeftArrow from '../icons/left_arrow';
-import RightArrow from '../icons/right_arrow';
+import LeftArrow from './icons/left_arrow';
+import RightArrow from './icons/right_arrow';
 
 import './slideshow.css';
 

@@ -1,5 +1,5 @@
 import SlideShow from './slideshow/slideshow';
-import Card from './content/card';
+import Card from './card/card';
 import TopToBottom from './dropdown/animate/TopToBottom';
 
 function App() {

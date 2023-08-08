@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@import './content/card.css';
+@import './card/card.css';
 
-@import './icons/icons.css';
+@import './slideshow/icons/icons.css';
 
 @layer base {
     main {
