@@ -1,0 +1,24 @@
+
+.card {
+    @apply w-96;
+
+    @apply bg-gradient-to-b;
+    @apply from-cyan-800/90;
+    @apply to-cyan-950/90;
+
+    @apply ring-4;
+    @apply ring-teal-950;
+}
+
+.card > img {
+    @apply w-full;
+    @apply h-36;
+}
+
+.card > h1 {
+    @apply text-center;
+}
+
+.card > div {
+    @apply py-5;
+}
