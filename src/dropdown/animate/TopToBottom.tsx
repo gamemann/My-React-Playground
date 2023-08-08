@@ -2,7 +2,13 @@ import { useRef, useState } from "react";
 
 import "./TopToBottom.css";
 
-const TopToBottom: React.FC = () => {
+const TopToBottom: React.FC<{
+    title: JSX.Element,
+    items: JSX.Element[]
+}> = ({
+    title,
+    items
+}) => {
     const menu = useRef<HTMLUListElement | null>(null);
 
     const [menuOpen, setMenuOpen] = useState(false);
@@ -40,11 +46,18 @@ const TopToBottom: React.FC = () => {
 
                     setMenuOpen(!menuOpen);
                 }}
-            >Drop Down!</button>
+            >
+                {title}
+            </button>
             <div className="relative">
                 <ul ref={menu} className="dropdown-menu">
-                    <li>Action One</li>
-                    <li>Action Two</li>
+                    {items.map((item) => {
+                        return (
+                            <li>
+                                {item}
+                            </li>
+                        );
+                    })}
                 </ul>
             </div>
         </div>

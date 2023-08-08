@@ -2,12 +2,28 @@ import SlideShow from './slideshow/slideshow';
 import Card from './card/card';
 import TopToBottom from './dropdown/animate/TopToBottom';
 
+// Generate drop down items.
+const dropDownItems: JSX.Element[] = [];
+
+Array.from({ length: 10 }, (_, index) => {
+    dropDownItems.push(<>Item Number {index.toString()}</>)
+})
+
 function App() {
   return (
     <main>
         <div className="content-item">
-            <h1>Drop Down Example</h1>
-            <TopToBottom />
+            <h1>Drop Down Examples</h1>
+            <div className="flex flex-wrap gap-4">
+                <TopToBottom
+                    title={<>Drop Down One</>}
+                    items={dropDownItems}
+                />
+                <TopToBottom
+                    title={<>Drop Down Two</>}
+                    items={dropDownItems}
+                />
+            </div>
         </div>
         <div className="content-item">
             <h1>Slideshow Example</h1>
