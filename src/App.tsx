@@ -16,12 +16,22 @@ function App() {
             <h1>Drop Down Examples</h1>
             <div className="flex flex-wrap gap-4">
                 <TopToBottom
-                    title={<>Drop Down One</>}
+                    title={<>Drop Down Click #1</>}
                     items={dropDownItems}
                 />
                 <TopToBottom
-                    title={<>Drop Down Two</>}
+                    title={<>Drop Down Click #2</>}
                     items={dropDownItems}
+                />
+                <TopToBottom
+                    title={<>Drop Down Hover #1</>}
+                    items={dropDownItems}
+                    hover={true}
+                />
+                <TopToBottom
+                    title={<>Drop Down Hover #2</>}
+                    items={dropDownItems}
+                    hover={true}
                 />
             </div>
         </div>
